@@ -1,63 +1,88 @@
-# DhemantUtils
+# dhemant-utils 🚀
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.0.
+A lightweight, performance-focused Angular utility library that contains **multiple reusable utilities**
+such as **directives, pipes, and helpers** — including tooltips, click-outside handling, safe HTML pipes, and more.
+Designed to be **standalone-friendly**, easy to use, and production-ready.
 
-## Code scaffolding
+[![npm version](https://img.shields.io/npm/v/dhemant-utils.svg)](https://www.npmjs.com/package/dhemant-utils)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🔗 Live Documentation
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Explore the **Live Utility Dashboard** with interactive demos and documentation:  
+👉 **[Live Utility Dashboard](https://dnhemant.github.io/dhemant-utils/)**
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## 📦 Installation
 
-To build the library, run:
-
-```bash
-ng build dhemant-utils
-```
-
-This command will compile your project, and the build artifacts will be placed in the `dist/` directory.
-
-### Publishing the Library
-
-Once the project is built, you can publish your library by following these steps:
-
-1. Navigate to the `dist` directory:
-   ```bash
-   cd dist/dhemant-utils
-   ```
-
-2. Run the `npm publish` command to publish your library to the npm registry:
-   ```bash
-   npm publish
-   ```
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Install the package via npm:
 
 ```bash
-ng test
+npm install dhemant-utils
 ```
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 🛠 Utilities Included (More Coming Soon 🚧)
 
-```bash
-ng e2e
+`dhemant-utils` currently includes a small but growing set of reusable Angular utilities
+such as UI directives and helper pipes.
+
+These utilities are designed to be:
+- Standalone-first
+- Lightweight and dependency-free
+- Easy to plug into any Angular application
+
+👉 **To see what’s available and how to use each utility, please visit the demo page.**
+
+---
+
+## 🚀 Usage
+
+All utilities are provided as standalone exports and can be imported directly
+into your Angular components.
+
+```ts
+import { ClickOutsideDirective, SafePipe, TooltipDirective } from 'dhemant-utils';
+
+@Component({
+  selector: 'app-feature',
+  imports: [ClickOutsideDirective, SafePipe, TooltipDirective],
+  template: `
+    <!-- See demo page for full usage examples -->
+  `
+})
+export class FeatureComponent {}
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## 📈 Roadmap
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- More UI directives (hover, focus, debounce, scroll)
+- Utility pipes (date, string, number helpers)
+- Zero-config performance helpers
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+You are free to use, modify, and distribute this package in both personal and commercial projects.
+The software is provided **"as is"**, without warranty of any kind.
+
+---
+
+## 👨‍💻 Author
+
+**Hemant Dubey**
+
+- GitHub: https://github.com/dnhemant  
+- Demo: **[Live Utility Dashboard](https://dnhemant.github.io/dhemant-utils/)**
+
+---
+

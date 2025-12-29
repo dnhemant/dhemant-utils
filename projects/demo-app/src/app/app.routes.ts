@@ -3,9 +3,13 @@ import { DirectiveClickOutside } from './components/directive-click-outside/dire
 import { DirectiveTooltip } from './components/directive-tooltip/directive-tooltip';
 import { NotFound } from './components/not-found/not-found';
 import { PipeSafe } from './components/pipe-safe/pipe-safe';
+import { Home } from './components/home/home';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'directives/click-outside', pathMatch: 'full' },
+  {
+    path: '',
+    component: Home
+  },
   {
     path: 'directives',
     children: [
