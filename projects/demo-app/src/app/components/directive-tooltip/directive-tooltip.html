@@ -1,0 +1,102 @@
+<article class="feature-card">
+  <div class="info">
+    <div class="header-group">
+      <span class="badge">Directive</span>
+      <h3>Tooltip Directive</h3>
+    </div>
+
+    <p class="main-desc">
+      A lightweight utility to display contextual text hints on hover. Now
+      supports
+      <strong>dynamic positioning</strong> and
+      <strong>custom CSS theming</strong>
+      through simple input properties.
+    </p>
+
+    <div class="specs-grid">
+      <span class="label">Import</span>
+      <code>import {{ "{" }} TooltipDirective {{ "}" }} from 'dhemant-utils';</code>
+
+      <span class="label">Registration</span>
+      <code>imports: [TooltipDirective]</code>
+
+      <span class="label">Inputs</span>
+      <div class="code-column">
+        <code>[tooltipPosition]: 'top' | 'bottom' | 'left' | 'right'</code>
+        <code>[tooltipClass]: string (custom CSS class)</code>
+      </div>
+
+      <span class="label">Usage</span>
+      <code
+        >&lt;button dhTooltip="Hi!"
+        tooltipPosition="right"&gt;...&lt;/button&gt;</code
+      >
+    </div>
+
+    <section class="logic-section">
+      <h4>Advanced Features</h4>
+      <ul class="doc-list">
+        <li>
+          <strong>Smart Positioning:</strong> Automatically calculates viewport
+          coordinates to prevent clipping and ensures the tooltip aligns with
+          the chosen axis.
+        </li>
+        <li>
+          <strong>Styling Hooks:</strong> Use <code>tooltipClass</code> to pass
+          any global CSS class for custom colors, fonts, or shadows.
+        </li>
+        <li>
+          <strong>Safe Cleanup:</strong> Uses <code>Renderer2</code> to safely
+          remove elements from the DOM, ensuring compatibility with Angular
+          Universal.
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="demo">
+    <div class="tooltip-demo-container">
+      <div class="demo-row">
+        <button
+          dhTooltip="Tooltip on Top"
+          tooltipPosition="top"
+          class="test-box sm"
+        >
+          Top
+        </button>
+      </div>
+      <div class="demo-row center">
+        <button
+          dhTooltip="Tooltip on Left"
+          tooltipPosition="left"
+          class="test-box sm"
+        >
+          Left
+        </button>
+        <button
+          dhTooltip="I'm a custom red tooltip!"
+          tooltipClass="danger-tooltip"
+          class="test-box sm danger"
+        >
+          Custom
+        </button>
+        <button
+          dhTooltip="Tooltip on Right"
+          tooltipPosition="right"
+          class="test-box sm"
+        >
+          Right
+        </button>
+      </div>
+      <div class="demo-row">
+        <button
+          dhTooltip="Tooltip on Bottom"
+          tooltipPosition="bottom"
+          class="test-box sm"
+        >
+          Bottom
+        </button>
+      </div>
+    </div>
+  </div>
+</article>
