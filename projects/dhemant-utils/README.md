@@ -12,7 +12,7 @@ Designed to be **standalone-friendly**, easy to use, and production-ready.
 ## 🔗 Live Documentation
 
 Explore the **Live Utility Dashboard** with interactive demos and documentation:  
-👉 **[Live Utility Dashboard](https://dnhemant.github.io/dhemant-utils/)**
+👉 **[Live Utility Dashboard](https://dhemant-dev.github.io/dhemant-utils/)**
 
 ---
 
@@ -81,8 +81,8 @@ The software is provided **"as is"**, without warranty of any kind.
 
 **Hemant Dubey**
 
-- GitHub: https://github.com/dnhemant  
-- Demo: **[Live Utility Dashboard](https://dnhemant.github.io/dhemant-utils/)**
+- GitHub: https://github.com/dhemant-dev  
+- Demo: **[Live Utility Dashboard](https://dhemant-dev.github.io/dhemant-utils/)**
 
 ---
 
