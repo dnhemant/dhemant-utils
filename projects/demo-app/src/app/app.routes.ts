@@ -8,7 +8,8 @@ import { Home } from './components/home/home';
 export const routes: Routes = [
   {
     path: '',
-    component: Home
+    component: Home,
+    data: { hideSidebar: true }
   },
   {
     path: 'directives',

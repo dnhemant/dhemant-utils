@@ -21,7 +21,6 @@ $code-bg: #272822;
     width: 260px;
     background: #1e293b;
     color: white;
-    height: 100vh;
     padding: 24px 16px;
     display: flex;
     flex-direction: column;
@@ -95,7 +94,6 @@ $code-bg: #272822;
     padding: 40px;
     background: $bg-light;
     overflow-y: auto;
-    height: 100vh;
 
     .section-header {
       margin-bottom: 40px;
