@@ -6,22 +6,20 @@
 }
 
 .landing-wrapper {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 24px;
+  padding: 80px 25px;
   background: #ffffff;
 }
 
-/* Hero Section */
 .hero {
   text-align: center;
   margin-bottom: 80px;
 }
 
 .brand-title {
-  font-size: clamp(3.5rem, 10vw, 5.5rem); /* Very large and visible */
+  font-size: clamp(3.5rem, 10vw, 5.5rem);
   font-weight: 800;
   letter-spacing: -0.06em;
   color: var(--text-main);
@@ -47,7 +45,6 @@
   color: #333;
 }
 
-/* Grid */
 .utility-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -106,4 +103,22 @@
 .minimal-footer {
   margin-top: 100px;
   color: var(--text-muted);
+}
+
+.explore-all-btn {
+  margin-top: 50px;
+  padding: 15px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 999px;
+  border: 1px solid #2d6cdf;
+  background: transparent;
+  color: #2d6cdf;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #2d6cdf;
+    color: #fff;
+  }
 }

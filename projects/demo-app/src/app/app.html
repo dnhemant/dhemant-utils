@@ -1,7 +1,8 @@
 <div class="dashboard-container">
+  @if (showSidebar) {
   <nav class="sidebar">
     <div class="brand hand" routerLink="/">dhemant-utils</div>
-    
+
     <ul class="main-menu">
       <li class="menu-group">
         <span class="group-title">Directives</span>
@@ -31,6 +32,7 @@
       </li>
     </ul>
   </nav>
+  }
 
   <main class="content">
     <router-outlet></router-outlet>
